@@ -4,15 +4,56 @@
     <meta charset="UTF-8" />
     <title>Simple Counter</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="counter-container">
+    <nav class="navbar navbar-dark bg-dark fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/images.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Counter App
+        </a>
+
+        <button class="btn-dark btn" id="toggle-theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="counter-container shadow">
       <h1 id="counter">0</h1>
-      <button class="btn-sound" id="decrement">-</button>
-      <button class="btn-sound" id="increment">+</button>
-      <button class="btn-sound" id="reset">Reset</button>
-      <button class="btn-sound" id="double">Double</button>
+      <button class="btn-sound btn btn-dark" id="decrement">
+        <i class="fas fa-minus"></i>
+      </button>
+      <button class="btn-sound btn btn-dark" id="increment">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="btn-sound btn btn-dark" id="reset">
+        <i class="fas fa-rotate-left"></i>
+      </button>
+      <button class="btn-sound btn btn-dark" id="double">
+        <i class="fas fa-x2"></i> 2x
+      </button>
     </div>
     <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
